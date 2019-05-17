@@ -37,7 +37,7 @@ import numbers
 typedef int64_t int64;
 typedef uint64_t uint64;
 
-%module(directors="1") operations_research_sat
+%module(directors="1",threads="1") operations_research_sat
 
 PY_PROTO_TYPEMAP(ortools.sat.cp_model_pb2,
                  CpModelProto,
